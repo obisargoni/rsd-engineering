@@ -8,7 +8,7 @@ Created on Thu Nov  7 11:47:54 2019
 # Write regression test for fractal tree
 
 # Import data that is produced by fractal tree
-from fractal_tree import d
+from .fractal_tree import d
 import pickle
 
 def test_fractal_tree():
