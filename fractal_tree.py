@@ -8,13 +8,10 @@ alpha = 0
 
 d=[[0,1,alpha]]
 
-c0 = [0,0]
-c1 = [branch_length*sin(alpha), branch_length*cos(alpha)]
-
 # Initialise first branch
-first_branch = Branch(c0, branch_length, alpha)
+first_branch = Branch([0,0], branch_length, alpha)
 
-plt.plot(c0,c1)
+plt.plot(first_branch.getStartCoord(),first_branch.getEndCoord())
 for i in range(5):
     n=[]
     for j in range(len(d)):

@@ -21,4 +21,6 @@ class Branch:
         return self.l
     def getEndCoord(self):
         return self.ec
+    def getStartCoord(self):
+        return self.sc
     
