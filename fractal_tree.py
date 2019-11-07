@@ -5,7 +5,7 @@ branch_length=1
 
 alpha = 0
 
-d=[[0,1,0]]
+d=[[0,1,alpha]]
 
 c0 = [0,0]
 c1 = [branch_length*sin(alpha), branch_length*cos(alpha)]
