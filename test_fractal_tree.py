@@ -8,7 +8,7 @@ Created on Thu Nov  7 11:47:54 2019
 # Write regression test for fractal tree
 
 # Import data that is produced by fractal tree
-from .fractal_tree import d
+from .fractal_tree import d, c1, first_branch
 import pickle
 
 def test_fractal_tree():
@@ -16,3 +16,6 @@ def test_fractal_tree():
     with open(orig_d_path, "rb") as f:
         orig_d = pickle.load(f)
         assert orig_d == d
+
+def test_first_branch():
+    assert (c1 == first_branch.getEndCoord())
